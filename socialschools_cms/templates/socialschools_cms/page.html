@@ -4,14 +4,18 @@
 
 {% block wrapper%}
     <div class="row-fluid">
-        <div class="span3">
-            <ul class="nav nav-tabs nav-stacked">
-            {% show_menu 2 100 100 100 "socialschools_cms/menu/menu.html" %}
-            </ul>
-        </div>
-        <div class="span6">
+        <div class="span9">
             <div class="css-content-white">
-                {% placeholder content_block_1 %}
+                <div class="row-fluid">
+                    <div class="span4">
+                        <ul class="nav nav-tabs nav-stacked">
+                        {% show_menu 2 100 100 100 "socialschools_cms/menu/menu.html" %}
+                        </ul>
+                    </div>
+                    <div class="span8">
+                        {% placeholder content_block_1 %}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="span3">

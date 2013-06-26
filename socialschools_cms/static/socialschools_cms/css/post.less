@@ -21,30 +21,80 @@
     }
 }
 
-.post-label-event-month {
-    margin-top: 10px;
+.post-label-date {
+    height: 50px;
     color: @white;
-    height: 20px;
-    background: @eventColor;
-    .border-radius(3px 0 0 0);
-    border-top: 1px solid darken(@eventColor, 10%);
-    border-left: 1px solid darken(@eventColor, 10%);
+    margin-top: 5px;
+    .border-radius(3px 0 0 3px);
+    text-align: center;
 }
 
-.post-label-event-day {
-    background: @white;
+.post-label-date-day {
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+/* date lable colors */
+
+.lightblue {
+    .post-label-date {
+        background: @labelLightBlue;
+    }
+}
+
+.green {
+    .post-label-date {
+        background: @labelGreen;
+    }
+}
+
+.magenta {
+    .post-label-date {
+        background: @labelMagenta;
+    }
+}
+
+.blue {
+    .post-label-date {
+        background: @labelBlue;
+    }
+}
+
+.lightgreen {
+    .post-label-date {
+        background: @labelLightGreen;
+    }
+}
+
+.yellow {
+    .post-label-date {
+        background: @labelYellow;
+    }
+}
+
+.red {
+    .post-label-date {
+        background: @labelRed;
+    }
+}
+
+.post-label-type {
+    margin-top: 5px;
+    height: 50px;
+    .border-radius(3px 0 0 3px);
     text-align: center;
-    font-size: 24px;
-    line-height: 30px;
-    .border-radius(0 0 0 3px);
-    font-weight: 600;
-    border-bottom: 1px solid @grayLight;
-    border-left: 1px solid @grayLight;
+    #gradient > .vertical(@themeColor, @themeSecondary);
+    icon {
+        margin-top: 15px;
+    }
 }
 
 .post-label-mngt {
     margin-top: 20px;
 }
+
 
 /* post body styles */
 
@@ -59,25 +109,16 @@
     line-height: 24px;
 }
 
-.post-meta {
-    margin-bottom: 20px;
-}
-
-.post-author {
-    margin-bottom: 20px;
-}
-
-.post-timestamp {
-    color: @grayLight;
-}
-
 .post-description {
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.post-author-disabled {
+    color: @gray;
 }
 
 .post-message-container {
     padding: 30px 30px 30px 30px;
-    border-bottom: 1px solid fadeout(@themeColor, 90%);
     .post-description {
         p {
             white-space: pre-wrap;
@@ -87,23 +128,39 @@
     }
 }
 
-/* Attachments styling */
-
-.post-attachments-container {
-    padding: 0 20px 0 20px;
+.post-event-container {
+    padding: 20px 30px;
+    margin: 30px -30px -30px -30px;
+    background: lighten(@grayLighter, 5%);
+    border-top: 1px solid @grayLighter;
+    icon {
+        opacity: 0.5;
+    }
 }
+
+/* Attachments styling */
 
 .post-file {
     margin-top: 5px;
 }
 
 .post-photo {
-    margin-top: 10px;
+    margin-top: 14px;
+    margin-left: 14px;
+    float: left;
+    img {
+        max-height: 118px;
+    }
+}
+
+.gallery {
+    margin-left: -20px;
 }
 
 .post-more-photos {
     font-size: 30px;
     height: 120px;
+    width: 118px;
     line-height: 120px;
     text-align: center;
     &:hover {
@@ -115,6 +172,7 @@
 
 .post-comments-container {
     background: fadeout(@themeColor, 95%);
+    border-top: 1px solid fadeout(@themeColor, 90%);
     padding: 30px;
     .border-radius(0 0 5px 5px);
     hr {
@@ -166,10 +224,6 @@
 .comment-field {
     margin-bottom: 0px !important;
     width: 100%;
-}
-
-.comment-timestamp {
-    color: @grayLight;
 }
 
 /* New post styles */

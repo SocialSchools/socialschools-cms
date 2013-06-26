@@ -1,9 +1,9 @@
 {% for child in children %}
     {% if forloop.counter <= 12 %}
         <div class="span1">
-            <a href="{{ child.get_absolute_url }}">{{ child.get_menu_title }}</a>
+            <a href="{{ child.get_absolute_url }}" class="main-item">{{ child.get_menu_title }}</a>
             {% for child in child.children %}
-                <a href="{{ child.get_absolute_url }}">{{ child.get_menu_title }}</a>
+                <a href="{{ child.get_absolute_url }}" class="sub-item">{{ child.get_menu_title }}</a>
             {% endfor %}
         </div>
 	{% endif %}

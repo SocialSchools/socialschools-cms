@@ -1,0 +1,71 @@
+/* Overrides for bootstrap classes */
+
+/* overrides primary button colors to match theme */
+
+.btn-primary {
+    .buttonBackground(@themeColor, @themeSecondary);
+    .buttonLinkColor(@themeColor);
+    &.active {
+      .buttonLinkColor(@themeColor);
+    }
+}
+
+.btn-primary:hover {
+    .buttonLinkHoverColor(@themeColor);
+}
+
+.btn-success {
+    .buttonBackground(lighten(#52b42b, 10%), #52b42b);
+}
+
+.navbar-inner {
+    #gradient > .vertical(@themeColor, @themeSecondary);
+    .nav {
+        li {
+            a {
+                .buttonLinkColor(@themeColor);
+                text-shadow: none;
+            }
+        }
+        .active {
+            a {
+                background-color: @themeColor !important;
+                .buttonLinkColor(@themeColor);
+                font-weight: bold;
+                .box-shadow(0 3px 8px rgba(0,0,0,0.35) inset);
+            }
+        }
+    }
+}
+
+
+
+.form-actions {
+    background: none;
+    border: 0;
+}
+
+.controls {
+    ul {
+        list-style: none;
+        margin-left: 0px;
+    }
+}
+
+/* cms-specific */
+
+.nav-stacked {
+    li {
+        a:hover {
+            background-color: fadeout(@themeColor, 95%);
+        }
+    }
+    .active {
+        a {
+            background-color: fadeout(@themeColor, 95%);
+        }
+        a:hover {
+            background-color: fadeout(@themeColor, 95%);
+        }
+    }
+}

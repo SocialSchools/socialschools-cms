@@ -1,0 +1,35 @@
+/* sticky footer styles */
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+  margin-top: 60px;
+}
+.footer, .push {
+  height: 142px; /* .push must be the same height as .footer */
+}
+
+.footer {
+  background: @white;
+  padding-top: 20px;
+}
+
+/* style for footer links */
+
+.main-item {
+  font-weight: bold;
+  display: block;
+}
+
+.sub-item {
+  font-size: 12px;
+  display: block;
+}
+
+
