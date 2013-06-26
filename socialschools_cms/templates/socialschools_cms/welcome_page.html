@@ -1,5 +1,6 @@
 {% extends "socialschools_cms/base.html" %}
 {% load cms_tags %}
+{% load socialschools_tags %}
 
 {% block wrapper%}
     <div class="row-fluid">
@@ -19,9 +20,7 @@
             </div>
         </div>
         <div class="span4">
-            <div class="css-content-white content-block login-block">
-                Login Block
-            </div>
+            {% socialschools_login %}
             <div class="css-content-white content-block widget-1">
                 {% placeholder widget_block_1 %}
             </div>

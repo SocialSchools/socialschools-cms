@@ -1,0 +1,7 @@
+{% load i18n %}
+
+{% if login_url %}
+<div class="css-content-white content-block login-block">
+    <a href="{{login_url}}/accounts/login/" class="btn" target="_socialschools">{% trans 'Login' %}</a> {% trans 'or' %} <a href="{{login_url}}/register/usertype/" class="btn" target="_socialschools">{% trans 'Register' %}</a>
+</div>
+{% endif %}
