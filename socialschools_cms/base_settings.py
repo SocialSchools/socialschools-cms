@@ -131,8 +131,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 CMS_TEMPLATES = (
-    ('socialschools_cms/welcome_page.html', gettext('Welcome Page')),
     ('socialschools_cms/page.html', gettext('Page')),
+    ('socialschools_cms/welcome_page.html', gettext('Welcome Page')),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (

@@ -27,8 +27,7 @@
                 <div class="container">
                 {% block navbar%}
                 <ul class="nav">
-                    {% show_menu 0 0 100 100 "socialschools_cms/menu/menu.html" %}
-                    {% show_menu 1 2 100 100 "socialschools_cms/menu/menu.html" %}
+                    {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
                 </ul>
                 {% endblock %}
                 </div>
@@ -45,7 +44,7 @@
         <footer class="footer">
             {% block footer %}
             <div class="container">
-                {% show_menu 1 2 100 100 "socialschools_cms/footer.html"%}
+                {% show_menu 0 1 1 100 "socialschools_cms/footer.html" %}
             </div>
             {% endblock %}
         </footer>
