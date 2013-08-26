@@ -1,12 +1,14 @@
 {% load cms_tags %}
-<h2>News</h2>
+{% load i18n %}
+
+<h2> {% trans 'News' %}</h2>
 <div class="tabbable">
     <ul class="nav nav-tabs">
         <li class="active">
-            <a href="#school-news" data-toggle="tab">From the School</a>
+            <a href="#school-news" data-toggle="tab"> {% trans 'From the School' %}</a>
         </li>
         <li>
-            <a href="#class-news" data-toggle="tab">From the classes</a>
+            <a href="#class-news" data-toggle="tab">{% trans 'From the classes' %}</a>
         </li>
     </ul>
     <div class="tab-content news-container">

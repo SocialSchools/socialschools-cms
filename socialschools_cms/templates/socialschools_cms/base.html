@@ -22,23 +22,25 @@
     </head>
     <body>
         <div class="wrapper">
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                {% block navbar%}
-                <ul class="nav">
-                    {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
-                </ul>
-                {% endblock %}
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                    {% block navbar%}
+                    <ul class="nav">
+                        {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
+                    </ul>
+                    {% endblock %}
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container main-content">
-            {% block wrapper %}
-            {% endblock %}
-        </div>
-        <div class="push">
-        </div>
+            <div class="container">
+                <div class="footer-spacer-top">
+                    {% block wrapper %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="footer-spacer">
+            </div>
         </div>
 
         <footer class="footer">
@@ -60,10 +62,10 @@
             </div>
             <div class="modal-body"><div class="modal-image"></div></div>
             <div class="modal-footer">
-                <a class="btn btn-primary modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
-                <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
-                <a class="btn modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play"></i> Slideshow</a>
-                <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+                <a class="btn btn-primary modal-prev"><i class="icon-arrow-left icon-white"></i>{% trans 'Previous' %}</a>
+                <a class="btn btn-primary modal-next">{% trans 'Next' %} <i class="icon-arrow-right icon-white"></i></a>
+                <a class="btn modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play"></i> {% trans 'Slideshow' %}</a>
+                <a class="btn modal-download" target="_blank"><i class="icon-download"></i> {% trans 'Download' %}</a>
             </div>
         </div>
 

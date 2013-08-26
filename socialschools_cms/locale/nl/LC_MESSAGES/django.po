@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-26 13:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: base_settings.py:134
+msgid "Page"
+msgstr "Pagina"
+
+#: base_settings.py:135
+msgid "Welcome Page"
+msgstr "Welkomst pagina"
+
+#: templates/socialschools_cms/base.html:65
+msgid "Previous"
+msgstr "Vorige"
+
+#: templates/socialschools_cms/base.html:66
+msgid "Next"
+msgstr "Volgende"
+
+#: templates/socialschools_cms/base.html:67
+msgid "Slideshow"
+msgstr "Diavoorstelling"
+
+#: templates/socialschools_cms/base.html:68
+msgid "Download"
+msgstr "Download"
+
+#: templates/socialschools_cms/news.html:4
+msgid "News"
+msgstr "Nieuws"
+
+#: templates/socialschools_cms/news.html:8
+msgid "From the School"
+msgstr "Van de School"
+
+#: templates/socialschools_cms/news.html:11
+msgid "From the classes"
+msgstr "Uit de klassen"
+
+#: templates/socialschools_cms/includes/socialschools_login.html:5
+msgid "My groups"
+msgstr "Mijn groepen"
+
+#: templates/socialschools_cms/includes/socialschools_login.html:6
+msgid ""
+"Log in to your personal environment where you can post messages in your "
+"groups"
+msgstr "Log hier in op je persoonlijke omgeving om berichten te lezen en plaatsen in je groepen."
+
+#: templates/socialschools_cms/includes/socialschools_login.html:7
+msgid "Login"
+msgstr "Inloggen"
+
+#: templates/socialschools_cms/includes/socialschools_login.html:7
+msgid "or"
+msgstr "of"
+
+#: templates/socialschools_cms/includes/socialschools_login.html:7
+msgid "Register"
+msgstr "Registreren"

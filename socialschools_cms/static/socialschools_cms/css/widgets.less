@@ -1,22 +1,26 @@
 /* styles for cms-widgets */
 
-.widget-1, .widget-2 {
+.widget-1, .widget-2, .widget-3 {
     h1, h2, h3, h4, h5 {
         font-size: 18px;
         color: @gray;
-        .border-radius(3px 3px 0 0);
-        margin: -20px -20px 10px -20px;
-        padding: 0px 10px 0px 10px;
-        background: @grayLighter;
-        border-bottom: 1px solid darken(@grayLighter, 5%);
-        border-top: 1px solid @white;
+        font-weight: 100;
+        line-height: 18px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid @grayLighter;
     }
 }
 
 .widget-1 {
-    border-left: 3px solid @cmsColorPrimary;
+    border-top: 3px solid @cmsColorPrimary;
 }
 
 .widget-2 {
-    border-left: 3px solid @cmsColorSecondary;
+    border-top: 3px solid @cmsColorSecondary;
+}
+
+.widget-3 {
+    border-top: 3px solid @themeColor;
 }

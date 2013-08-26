@@ -1,35 +1,41 @@
 /* sticky footer styles */
 
 html, body {
-  height: 100%;
+    height: 100%;
 }
 
 .wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-  margin-top: 60px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -142px; /* the bottom margin is the negative value of the footer's height */
 }
-.footer, .push {
-  height: 142px; /* .push must be the same height as .footer */
+
+.footer-spacer-top {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.footer, .footer-spacer {
+    height: 142px; /* .footer-spacer must be the same height as .footer */
 }
 
 .footer {
-  background: @white;
-  padding-top: 20px;
+    background: @white;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
 /* style for footer links */
 
 .main-item {
-  font-weight: bold;
-  display: block;
+    font-weight: bold;
+    display: block;
 }
 
 .sub-item {
-  font-size: 12px;
-  display: block;
+    font-size: 12px;
+    display: block;
 }
 
 
