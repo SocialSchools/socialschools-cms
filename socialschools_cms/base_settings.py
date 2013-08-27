@@ -91,6 +91,7 @@ INSTALLED_APPS = (
     'cms.plugins.picture',
     'cms.plugins.link',
     'cms.plugins.file',
+    'cms.plugins.googlemap',
     'cmsplugin_socialschools',
     'socialschools_cms',
 )
@@ -150,3 +151,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 INTERNAL_IPS = ('127.0.0.1',)
 
 CMS_USE_TINYMCE = True
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': "table,spellchecker,paste,searchreplace",
+    'theme': "advanced",
+}
