@@ -88,9 +88,9 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.link',
-    'cms.plugins.file',
     'cms.plugins.googlemap',
     'cmsplugin_socialschools',
+    'socialschools_cms.plugins.file',
     'socialschools_cms',
     'south',
 )
