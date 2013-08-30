@@ -81,12 +81,10 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'cms',
-    'south',
     'menus',
     'mptt',
     'south',
     'sekizai',
-    'tinymce',
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.link',
@@ -94,6 +92,7 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'cmsplugin_socialschools',
     'socialschools_cms',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -150,9 +149,4 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 INTERNAL_IPS = ('127.0.0.1',)
 
-CMS_USE_TINYMCE = True
-
-TINYMCE_DEFAULT_CONFIG = {
-    'plugins': "table,spellchecker,paste,searchreplace",
-    'theme': "advanced",
-}
+AWS_S3_SECURE_URLS = False
