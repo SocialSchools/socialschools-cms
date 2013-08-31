@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-26 13:43+0200\n"
+"POT-Creation-Date: 2013-08-31 13:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: base_settings.py:134
+#: base_settings.py:140
 msgid "Page"
 msgstr "Pagina"
 
-#: base_settings.py:135
+#: base_settings.py:141
 msgid "Welcome Page"
 msgstr "Welkomst pagina"
 
-#: templates/socialschools_cms/base.html:65
-msgid "Previous"
-msgstr "Vorige"
+#: plugins/file/cms_plugins.py:9
+msgid "File"
+msgstr "Bestand"
 
-#: templates/socialschools_cms/base.html:66
-msgid "Next"
-msgstr "Volgende"
+#: plugins/file/models.py:25
+msgid "file"
+msgstr "bestand"
 
-#: templates/socialschools_cms/base.html:67
-msgid "Slideshow"
-msgstr "Diavoorstelling"
+#: plugins/file/models.py:26
+msgid "title"
+msgstr "titel"
 
-#: templates/socialschools_cms/base.html:68
-msgid "Download"
-msgstr "Download"
+#: plugins/file/templates/cms/plugins/file.html:6
+msgid "file missing!"
+msgstr "bestand ontbreekt!"
+
+#: templates/404.html:4
+msgid "The page could not be found"
+msgstr "De pagina kon niet worden gevonden"
+
+#: templates/500.html:4
+msgid "Something went wrong"
+msgstr "Er is iets mis gegaan"
+
+#: templates/500.html:5
+msgid "We have been informed about the problem."
+msgstr "We zijn al op de hoogte gebracht van dit probleem"
 
 #: templates/socialschools_cms/news.html:4
 msgid "News"
@@ -62,7 +74,9 @@ msgstr "Mijn groepen"
 msgid ""
 "Log in to your personal environment where you can post messages in your "
 "groups"
-msgstr "Log hier in op je persoonlijke omgeving om berichten te lezen en plaatsen in je groepen."
+msgstr ""
+"Log hier in op je persoonlijke omgeving om berichten te lezen en plaatsen in "
+"je groepen."
 
 #: templates/socialschools_cms/includes/socialschools_login.html:7
 msgid "Login"
@@ -75,3 +89,15 @@ msgstr "of"
 #: templates/socialschools_cms/includes/socialschools_login.html:7
 msgid "Register"
 msgstr "Registreren"
+
+msgid "Previous"
+msgstr "Vorige"
+
+msgid "Next"
+msgstr "Volgende"
+
+msgid "Slideshow"
+msgstr "Diavoorstelling"
+
+msgid "Download"
+msgstr "Download"

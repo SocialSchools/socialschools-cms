@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.0.8'
+version = '1.0.0'
 
 setup(
     name='socialschools-cms',
     version=version,
-    description='socialschools plugin for django-cms',
+    description='SocialSchools CMS app with defaults for django-cms',
     author='Pratik Vyas',
     author_email='pratik.vyas@changer.nl',
     packages=find_packages(),

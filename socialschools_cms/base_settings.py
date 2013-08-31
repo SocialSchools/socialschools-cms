@@ -10,6 +10,12 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
+ADMINS = (
+    ('CSS Support Team', 'support@socialschools.nl'),
+)
+
+MANAGERS = ADMINS
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -83,7 +89,6 @@ INSTALLED_APPS = (
     'cms',
     'menus',
     'mptt',
-    'south',
     'sekizai',
     'cms.plugins.text',
     'cms.plugins.picture',
@@ -130,6 +135,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+
 CMS_TEMPLATES = (
     ('socialschools_cms/page.html', gettext('Page')),
     ('socialschools_cms/welcome_page.html', gettext('Welcome Page')),
@@ -148,5 +154,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 INTERNAL_IPS = ('127.0.0.1',)
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers, heroku takes care of allowed hosts at routing level
+ALLOWED_HOSTS = ['*']
 
 AWS_S3_SECURE_URLS = False
