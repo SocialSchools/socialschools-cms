@@ -26,7 +26,7 @@
         {% render_block 'css' %}
     </head>
     <body>
-        <div class="wrapper">
+        <div class="footer-row">
             <div class="navbar navbar-fixed-top">
                 <div class="navbar-inner">
                     <div class="container">
@@ -38,17 +38,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="footer-row-expand">
             <div class="container">
-                <div class="footer-spacer-top">
-                    {% block wrapper %}
-                    {% endblock %}
-                </div>
-            </div>
-            <div class="footer-spacer">
+                {% block wrapper %}
+                {% endblock %}
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer-row css-footer">
             {% block footer %}
             <div class="container">
                 {% show_menu 0 1 1 100 "socialschools_cms/footer.html" %}

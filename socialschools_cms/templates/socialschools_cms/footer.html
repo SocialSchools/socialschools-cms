@@ -1,10 +1,14 @@
+<div class="row">
 {% for child in children %}
-    {% if forloop.counter <= 12 %}
-        <div class="span1">
+        <div class="span2 item-list">
             <a href="{{ child.get_absolute_url }}" class="main-item">{{ child.get_menu_title }}</a>
             {% for child in child.children %}
                 <a href="{{ child.get_absolute_url }}" class="sub-item">{{ child.get_menu_title }}</a>
             {% endfor %}
         </div>
-	{% endif %}
+    {% if forloop.counter|divisibleby:"6" and not forloop.counter.last %}
+        </div>
+        <div class="row">
+    {% endif %}
 {% endfor %}
+</div>
