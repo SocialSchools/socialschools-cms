@@ -1,0 +1,311 @@
+/* general (sitewide) styles for Changer Social Schools */
+
+body {
+    background: url("img/background.png") no-repeat center center fixed;
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @headerColor;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.themeColor {
+    color: @themeColor;
+}
+
+a {
+    .linkColor(@themeColor);
+}
+
+.meta-info {
+    color: @grayLight;
+}
+
+.white-widget {
+    background: @white;
+    .box-shadow(0 2px 6px darken(@grayLight, 10%));
+    .border-radius(3px);
+}
+
+/* styles for the topbar */
+
+
+.css-topbar {
+    background: white;
+}
+
+.css-stripe {
+    float: left;
+    width: 20%;
+    height: 2px;
+}
+
+.stripe-1 {
+    background: @themeColor;
+}
+
+.stripe-2 {
+    background: @cmsColorSecondary;
+}
+
+.stripe-3 {
+    background: @cmsColorPrimary;
+}
+
+.school-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 30px;
+    max-width: 600px;
+}
+
+.css-login {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* media queries to override bootstraps full width navbar container */
+
+@media (min-width: 1200px) {
+    .css-navbar .container {
+        width:1170px;
+    }
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+    .css-navbar .container {
+        width:960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .css-navbar .container {
+        width:724px;
+    }
+}
+
+/* styles for the main content containers */
+
+.css-content-transparent {
+    background-color: rgba(245,245,245, 0.7);
+    .box-shadow(0 0 6px darken(@grayLight, 10%) inset);
+    padding: 20px;
+    .border-radius(3px);
+    border-bottom: 1px solid rgba(255,255,255, 0.4);
+}
+
+.css-content-white {
+    .white-widget;
+    padding: 20px;
+}
+
+.content-header {
+    font-weight: 400;
+    color: @themeHeader;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    margin: 0px;
+}
+
+.content-sub-header {
+    font-weight: 100;
+}
+
+.content-description {
+    text-align: center;
+    display: block;
+}
+
+.description {
+    text-align: center;
+}
+
+.content-item {
+    width: 145px;
+    margin-right: 20px;
+    .box-sizing(border-box);
+    float: left;
+}
+
+.no-content-community, .no-content-dashboard {
+    position: relative;
+    text-align: center;
+    h2 {
+        color: @themeColor;
+    }
+}
+
+.no-content-dashboard:after {
+    background: url("img/no-content-arrow-left.png") no-repeat;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 30px;
+    left: -60px;
+    content: '';
+}
+
+.no-content-community:after {
+    background: url("img/no-posts-arrow.png") no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    top: -90px;
+    left: 530px;
+    content: '';
+}
+
+/* mask for file input buttons */
+
+.file-input-mask {
+    display: inline-block;
+    position: relative;
+    input {
+        opacity: 1;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .btn-file-input {
+        position: absolute;
+        left: 0px;
+        top: 8px;
+    }
+}
+
+/* Style for css-thumbnails */
+
+.css-thumb {
+    border: 1px solid rgba(0,0,0,0.2);
+    .border-radius(2px);
+}
+
+.invite-delete {
+    float: left;
+    margin-left: 10px;
+}
+
+/* cms specific styles */
+
+.main-content {
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: @white;
+    overflow: hidden;
+}
+
+.news-container {
+    padding-right: 5px;
+}
+
+.css-well {
+    background-color: fadeout(@themeColor, 95%);
+    border: 1px solid fadeout(@themeColor, 90%);
+    margin-top: 30px;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+.circle {
+    .border-radius(500px 500px 500px 500px);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 100%;
+    margin-bottom: -50%;
+    border: 10px solid @white;
+    .box-shadow(0 0 10px @themeColor);
+    img {
+        position: absolute;
+    }
+}
+
+
+/* topnav and footer responsive styles to override bootstrap */
+
+@media (max-width: 979px) {
+    .css-topbar, .footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar, .css-stripes {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.css-breadcrumb {
+    margin: -20px -20px 20px -20px;
+}
+
+/* global styles for events */
+
+.event-icon-month {
+    background: @themeColor;
+    text-align: center;
+    .border-radius(3px 3px 0 0);
+    border: 1px solid darken(@themeColor, 10%);
+    color: @white;
+}
+
+.event-icon-day {
+    text-align: center;
+    .border-radius(0 0 3px 3px);
+    border: 1px solid @grayLighter;
+    border-top: none;
+    background: @white;
+}
+
+.event-icon-day-number {
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.meta-info {
+    color: @grayLight;
+}
+
+.event-multiday-time {
+    margin-bottom: 0px;
+    strong {
+        text-transform: uppercase;
+    }
+}
+
+.event-singleday-time {
+    font-size: 24px;
+}
+
+.event-location {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+/* specific event styles for events page */
+
+.event-list-item {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid @grayLighter;
+    h3 {
+        font-weight: 100;
+        margin: 0px;
+        line-height: 24px;
+    }
+}
+

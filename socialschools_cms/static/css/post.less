@@ -1,0 +1,300 @@
+/* Styles for post */
+
+.post {
+    margin-top: 20px;
+}
+
+/* label styles */
+
+.post-labels {
+    float: left;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.post-label-picture {
+    img, div {
+        border:2px solid @themeColor;
+        border-right: 0px;
+        .box-sizing(border-box);
+        .border-radius(3px 0 0 3px);
+    }
+}
+
+.post-label-date {
+    height: 50px;
+    color: @white;
+    margin-top: 5px;
+    .border-radius(3px 0 0 3px);
+    text-align: center;
+}
+
+.post-label-date-day {
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+/* date lable colors */
+
+.lightblue {
+    .post-label-date {
+        background: @labelLightBlue;
+    }
+}
+
+.green {
+    .post-label-date {
+        background: @labelGreen;
+    }
+}
+
+.magenta {
+    .post-label-date {
+        background: @labelMagenta;
+    }
+}
+
+.blue {
+    .post-label-date {
+        background: @labelBlue;
+    }
+}
+
+.lightgreen {
+    .post-label-date {
+        background: @labelLightGreen;
+    }
+}
+
+.yellow {
+    .post-label-date {
+        background: @labelYellow;
+    }
+}
+
+.red {
+    .post-label-date {
+        background: @labelRed;
+    }
+}
+
+.post-label-type {
+    margin-top: 5px;
+    height: 50px;
+    .border-radius(3px 0 0 3px);
+    text-align: center;
+    #gradient > .vertical(@themeColor, @themeSecondary);
+    icon {
+        margin-top: 15px;
+    }
+}
+
+.post-label-mngt {
+    margin-top: 20px;
+}
+
+
+/* post body styles */
+
+.post-body {
+    .white-widget;
+    margin-left: 50px;
+    .box-sizing(border-box);
+}
+
+.post-header {
+    margin: 0px;
+    line-height: 24px;
+}
+
+.post-description {
+    margin-top: 20px;
+}
+
+.post-author-disabled {
+    color: @gray;
+}
+
+.post-message-container {
+    padding: 30px 30px 30px 30px;
+    .post-description {
+        p {
+            white-space: pre-wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.post-event-container {
+    padding: 20px 30px;
+    margin: 30px -30px -30px -30px;
+    background: lighten(@grayLighter, 5%);
+    border-top: 1px solid @grayLighter;
+    icon {
+        opacity: 0.5;
+    }
+}
+
+/* Attachments styling */
+
+.post-file {
+    margin-top: 5px;
+}
+
+.post-photo {
+    margin-top: 14px;
+    margin-left: 14px;
+    float: left;
+    img {
+        max-height: 117px;
+    }
+}
+
+.gallery {
+    margin-left: -14px;
+}
+
+.post-more-photos {
+    font-size: 30px;
+    height: 120px;
+    width: 118px;
+    line-height: 120px;
+    text-align: center;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.video-thumbnail, .file-thumbnail {
+    margin-top: 20px;
+}
+
+.file-thumbnail icon {
+    opacity: 0.5;
+}
+
+/* comments styling */
+
+.post-comments-container {
+    background: fadeout(@themeColor, 95%);
+    border-top: 1px solid fadeout(@themeColor, 90%);
+    padding: 30px;
+    .border-radius(0 0 5px 5px);
+    hr {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+}
+
+.post-more-comments {
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.comment, .new-comment {
+    img {
+        .css-thumb;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.comment {
+    margin-bottom: 10px;
+    line-height: 18px;
+    img {
+        margin-top: 4px;
+    }
+    &:last-child {
+        margin-bottom: 15px;
+    }
+}
+
+.comment-body {
+    margin-left: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comment-form {
+    margin-bottom: 0px;
+}
+
+.comment-field-container {
+    margin-right: 60px;
+    margin-left: 40px;
+
+}
+
+.comment-field {
+    margin-bottom: 0px !important;
+    width: 100%;
+}
+
+/* New post styles */
+
+.post-create-container {
+    padding: 30px;
+    form {
+        margin-bottom: 0px;
+    }
+    .nav-tabs{
+        margin-top: 20px;
+    }
+    .alert {
+        padding: 10px;
+    }
+}
+
+.post-create-title {
+    width: 100%;
+    height: 30px !important;
+    .box-sizing(border-box);
+    margin-bottom: 10px !important;
+}
+
+.post-create-description {
+    width: 100%;
+    max-width: 100%;
+    .box-sizing(border-box);
+    margin-bottom: 10px !important;
+}
+
+.post-create-event-date {
+    width: 75px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.second-day {
+    margin-top: 10px;
+}
+
+.location {
+    margin-top: 10px;
+    input{
+        margin-left: 5px;
+    }
+}
+
+.post-create-video {
+    width: 100%;
+    .box-sizing(border-box);
+    height: 30px !important;
+}
+
+.post-photo-field {
+    width: 100%;
+    padding: 30px 10px 30px 10px;
+    .box-sizing(border-box);
+    background: lighten(@themeColor, 33%);
+    border: 2px dashed @themeColor;
+    text-align: center;
+    .border-radius(4px);
+    span {
+        color: @themeColor;
+    }
+}
