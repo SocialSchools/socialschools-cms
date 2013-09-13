@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-31 13:18+0200\n"
+"POT-Creation-Date: 2013-09-13 16:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,15 +42,15 @@ msgstr "titel"
 msgid "file missing!"
 msgstr "bestand ontbreekt!"
 
-#: templates/404.html:4
+#: templates/404.html:6
 msgid "The page could not be found"
 msgstr "De pagina kon niet worden gevonden"
 
-#: templates/500.html:4
+#: templates/500.html:5
 msgid "Something went wrong"
 msgstr "Er is iets mis gegaan"
 
-#: templates/500.html:5
+#: templates/500.html:6
 msgid "We have been informed about the problem."
 msgstr "We zijn al op de hoogte gebracht van dit probleem"
 
@@ -67,37 +67,42 @@ msgid "From the classes"
 msgstr "Uit de klassen"
 
 #: templates/socialschools_cms/includes/socialschools_login.html:5
-msgid "My groups"
-msgstr "Mijn groepen"
-
-#: templates/socialschools_cms/includes/socialschools_login.html:6
 msgid ""
-"Log in to your personal environment where you can post messages in your "
-"groups"
+"Log in to your personal environment where you can read and post messages in "
+"your groups"
 msgstr ""
 "Log hier in op je persoonlijke omgeving om berichten te lezen en plaatsen in "
 "je groepen."
 
-#: templates/socialschools_cms/includes/socialschools_login.html:7
+#: templates/socialschools_cms/includes/socialschools_login.html:5
 msgid "Login"
 msgstr "Inloggen"
 
-#: templates/socialschools_cms/includes/socialschools_login.html:7
+#: templates/socialschools_cms/includes/socialschools_login.html:5
 msgid "or"
 msgstr "of"
 
-#: templates/socialschools_cms/includes/socialschools_login.html:7
+#: templates/socialschools_cms/includes/socialschools_login.html:5
+msgid ""
+"Dont have an account for this school yet? Register it now and become member "
+"of groups in this school"
+msgstr "Heb je nog geen account voor deze school? Registreer je nu en word lid van groepen in je school"
+
+#: templates/socialschools_cms/includes/socialschools_login.html:5
 msgid "Register"
-msgstr "Registreren"
+msgstr "Registreer"
 
-msgid "Previous"
-msgstr "Vorige"
+#~ msgid "My groups"
+#~ msgstr "Mijn groepen"
 
-msgid "Next"
-msgstr "Volgende"
+#~ msgid "Previous"
+#~ msgstr "Vorige"
 
-msgid "Slideshow"
-msgstr "Diavoorstelling"
+#~ msgid "Next"
+#~ msgstr "Volgende"
 
-msgid "Download"
-msgstr "Download"
+#~ msgid "Slideshow"
+#~ msgstr "Diavoorstelling"
+
+#~ msgid "Download"
+#~ msgstr "Download"
