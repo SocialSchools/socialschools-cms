@@ -2,6 +2,7 @@
 {% load sekizai_tags %}
 {% load menu_tags %}
 {% load i18n %}
+{% load socialschools_tags %}
 
 <!DOCTYPE html>
 <html>
@@ -27,8 +28,21 @@
     </head>
     <body>
         <div class="footer-row">
-            <div class="navbar navbar-fixed-top">
-                <div class="navbar-inner">
+            <div class="css-topbar">
+                <div class="css-stripes">
+                    <div class="css-stripe stripe-1"></div>
+                    <div class="css-stripe stripe-2"></div>
+                    <div class="css-stripe stripe-3"></div>
+                    <div class="css-stripe stripe-1"></div>
+                    <div class="css-stripe stripe-2"></div>
+                </div>
+                <div class="container">
+                    <img class="school-logo" src="{% static 'css/img/school-logo.png' %}">
+                    {% socialschools_login %}
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="navbar-inner css-navbar">
                     <div class="container">
                     {% block navbar%}
                     <ul class="nav">
@@ -55,6 +69,7 @@
         </footer>
         <script type="text/javascript" src="{% static 'js/jquery.1.9.1.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/socialschools-cms.js' %}"></script>
         {% render_block 'js' %}
     </body>
 </html>

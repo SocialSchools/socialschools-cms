@@ -1,9 +1,7 @@
 {% load i18n %}
 
 {% if login_url %}
-<div class="css-content-white content-block login-block widget-3">
-    <h3>{% trans 'My groups' %}</h3>
-    <p>{% trans 'Log in to your personal environment where you can post messages in your groups' %}</p>
-    <a href="{{login_url}}/accounts/login/" class="btn" target="_socialschools">{% trans 'Login' %}</a> {% trans 'or' %} <a href="{{login_url}}/register/usertype/" target="_socialschools">{% trans 'Register' %}</a>
-</div>
+    <div class="pull-right css-login">
+        <a href="{{login_url}}/accounts/login/" class="btn btn-success css-tooltip" target="_socialschools" data-toggle="tooltip" data-placement="bottom" data-original-title="{% trans 'Log in to your personal environment where you can read and post messages in your groups'%}">{% trans 'Login' %}</a> {% trans 'or' %} <a href="{{login_url}}/register/usertype/" class="css-tooltip" target="_socialschools" data-toggle="tooltip" data-placement="bottom" data-original-title="{% trans 'Dont have an account for this school yet? Register it now and become member of groups in this school' %}">{% trans 'Register' %}</a>
+    </div>
 {% endif %}
