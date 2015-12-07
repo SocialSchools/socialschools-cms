@@ -55,19 +55,19 @@
             {% endblock %}
         </footer>
 
-        {% compress js %}
-            {% if debug %}
-                <script type="text/javascript" src="{% static 'js/jquery.1.9.1.min.js' %}"></script>
-                <script type="text/javascript" src="{% static 'js/jquery.colorbox.js' %}"></script>
-                <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-                <script type="text/javascript" src="{% static 'js/socialschools-cms.js' %}"></script>
-                <script type="text/javascript" src="{% static 'js/multitenant.js' %}"></script>
-                <script type="text/javascript" src="{% static 'js/theme3-topbar.js' %}"></script>
-                <script type="text/javascript" src="{% static 'js/bootstrap-hover-dropdown.min.js' %}"></script>
-            {% else %}
-                <script type="text/javascript" src="{% static 'js/multitenant-cms.min.js' %}"></script>
-            {% endif %}
-        {% endcompress %}
+        
+        {% if debug %}
+            <script type="text/javascript" src="{% static 'js/jquery.1.9.1.min.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/jquery.colorbox.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/socialschools-cms.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/multitenant.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/theme3-topbar.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/bootstrap-hover-dropdown.min.js' %}"></script>
+        {% else %}
+            <script type="text/javascript" src="{% static 'js/multitenant-cms.min.js' %}"></script>
+        {% endif %}
+    
         {% render_block 'js' %}
         {% placeholder "Google Analytics" inherit %}
     </body>
